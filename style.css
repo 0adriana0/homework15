@@ -16,19 +16,25 @@
 @keyframes squarerainbow {
     0%{
         background-color: red;
-        top: 0;
+        bottom: 0;
+        transition: 0.4s ease;
     }
     25%{
         background-color: blue;
-        top: 400px;
-        left:400px;
+        bottom: 0;
+        right:0;
+        transition: 0.4s ease;
     }
     50%{
         background-color: green;
-        left: 0;
+        right: 0;
         top: 0;
+        transition: 0.4s ease;
     }
     100%{
         background-color: yellow;
+        top: 0;
+        left: 0;
+        transition: 0.4s ease;
     }
 }

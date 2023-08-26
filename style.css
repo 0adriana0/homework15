@@ -1,6 +1,5 @@
 .container{
     position: relative;
-    background-color: aqua;
     width: 500px;
     height: 500px;
     margin: 150px auto;
@@ -8,33 +7,39 @@
 
 .box{
     position: absolute;
+    top: 0;
+    left: 0;
     width: 100px;
     height: 100px;
-    animation: squarerainbow 6s ease-in 2s infinite alternate;
+    animation: squarerainbow 4s ease-in 2s infinite normal;
 }
 
 @keyframes squarerainbow {
     0%{
         background-color: red;
-        bottom: 0;
-        transition: 0.4s ease;
+        top: 0;
+        left: 0;
     }
     25%{
         background-color: blue;
-        bottom: 0;
-        right:0;
-        transition: 0.4s ease;
+        top: 400px;
+        left:0;
     }
     50%{
         background-color: green;
-        right: 0;
-        top: 0;
-        transition: 0.4s ease;
+        left: 400px;
+        top: 400px;
     }
-    100%{
+
+    75%{
         background-color: yellow;
         top: 0;
+        left: 400px;
+    }
+
+    100%{
+        background-color: red;
+        top: 0;
         left: 0;
-        transition: 0.4s ease;
     }
 }
